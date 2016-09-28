@@ -916,7 +916,8 @@ status_t CameraHardwareInterfaceFlashControl::disconnectCameraDevice() {
     }
     mDevice->setPreviewWindow(NULL);
     mDevice->release();
-    mDevice = NULL;
+    //mDevice = NULL;
+    mDevice.clear();
 
     return OK;
 }
