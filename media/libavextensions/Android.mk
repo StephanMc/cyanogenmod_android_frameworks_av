@@ -1,5 +1,6 @@
 LOCAL_PATH:= $(call my-dir)
 include $(CLEAR_VARS)
+LOCAL_CFLAGS += -Wno-unused-parameter
 
 LOCAL_SRC_FILES:=                          \
         stagefright/ExtendedMediaDefs.cpp  \
@@ -47,7 +48,7 @@ include $(BUILD_STATIC_LIBRARY)
 ########################################################
 
 include $(CLEAR_VARS)
-
+LOCAL_CFLAGS += -Wno-unused-parameter
 LOCAL_SRC_FILES:=                          \
         media/AVMediaUtils.cpp             \
 
